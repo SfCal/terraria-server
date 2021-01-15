@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  world1:
+    image: ryshe/terraria:latest
+    ports:
+      - '6777:6777'
+    restart: unless-stopped
+    environment:
+      - WORLD_FILENAME=world1.wld
+    volumes:
+      - $HOME/terraria/config:/config
+      - $HOME/terraria/plugins:/plugins
+      - $HOME/terraria/world/world1:/root/.local/share/Terraria/Worlds
+  world2:
+    image: ryshe/terraria:latest
+    ports:
+      - '6778:6778'
+    restart: unless-stopped
+    environment:
+      - WORLD_FILENAME=world2.wld
+    volumes:
+      - $HOME/terraria/config:/config
+      - $HOME/terraria/plugins:/plugins
+      - $HOME/terraria/world/world2:/root/.local/share/Terraria/Worlds
+  world3:
+    image: ryshe/terraria:latest
+    ports:
+      - '6779:6779'
+    restart: unless-stopped
+    environment:
+      - WORLD_FILENAME=world3.wld
+    volumes:
+      - $HOME/terraria/config:/config
+      - $HOME/terraria/plugins:/plugins
+      - $HOME/terraria/world/world3:/root/.local/share/Terraria/Worlds
