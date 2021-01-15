@@ -1,3 +1,6 @@
 [submodule "terraria"]
 	path = terraria
 	url = https://github.com/ryansheehan/terraria
+[submodule "Dimensions"]
+	path = Dimensions
+	url = https://github.com/popstarfreas/Dimensions
