@@ -1,0 +1,3 @@
+[submodule "terraria"]
+	path = terraria
+	url = https://github.com/ryansheehan/terraria
